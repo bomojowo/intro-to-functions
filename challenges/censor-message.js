@@ -14,25 +14,26 @@ function censorMessage(message, banList){
     // set scrubbedWords to an empty list
     let scrubbedWords = [];
     // for each string word in rawWords
-    for (stringWord of rawWords){
+    for (word of rawWords){
         // 	set lowercaseWord to lowercase(word)
-        let lowercaseWord = stringWord.toLowerCase();
+        let lowercaseWord = word.toLowerCase();
         //console.log(lowercaseWord)
         //  if lowercaseWord is contained in the list banList
-        if (banList.includes(lowercaseWord)){
+        if (banList.includes(word)){
             //  insert the string '*****' at the end of scrubbedWord
             scrubbedWords.push('*****');
             //console.log(scrubbedWords)
         } else{
         //else
         //   insert word at the end of scrubbedWords
-            scrubbedWords.push(stringWord)
+            scrubbedWords.push(word)
             //console.log(scrubbedWords)
         }
-        //set scrubbedMessage to the string created by joining together every string in scrubbedWords with a space (' ') as a join character
-        scrubbedMessage = scrubbedWords.join(' ');
-        //console.log(scrubbedMessage)
     }
+//set scrubbedMessage to the string created by joining together every string in scrubbedWords with a space (' ') as a join character
+scrubbedMessage = scrubbedWords.join(' ');
+//console.log(scrubbedMessage)
+
     // return scrubbedMessage
     return scrubbedMessage;
     
