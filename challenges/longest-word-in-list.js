@@ -1,9 +1,16 @@
+//Write a function that, given a list of strings, returns the string which has the greatest character count (including duplicates).
+
 // function:
 // =========
 // name: longestInList
 // parameter: words: list of strings
 // return type: string
 
+/**
+ * Given a list of strings, returns the string which has the greatest chracter count (including duplicates).
+ * @param {string} words 
+ * @returns {string} - has the longest length in list
+ */
 // pseudo code:
 // ============
 function longestInList(words){
