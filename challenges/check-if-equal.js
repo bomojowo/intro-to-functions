@@ -1,9 +1,18 @@
+//Write a function that, given two numbers, returns a boolean representing whether or not the two numbers are equal.
+
 // function:
 // =========
 // name: isEqual
 // parameter a: number
 // parameter b: number
 // return: boolean
+
+/**
+ * Given two numbers, returns a boolean representing whether or not the two numbers are equal
+ * @param {number} a -input number
+ * @param {number} b -input number
+ * @returns {boolean} -true or false
+ */
 
 // pseudo code:
 // ============
