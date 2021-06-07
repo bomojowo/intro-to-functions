@@ -1,9 +1,17 @@
+//Write a function that, given a full message and a list of words, returns a single string that represents a 'censored' version of the original message: all words from the list must be scrubbed out and replaced with five asterisks (*****).
 // function:
 // =========
 // name: censorMessage
 // parameter: message: string
 // parameter: banList: list of strings
 // return type: string
+/**
+ * Given a full message and a lsit of words, returns a single string that represents a 'censored' version of the original message: all words from the list must be scrubbed out and replaced with five asterisks (*****).
+ * @param {string} message 
+ * @param {list} banList 
+ * @returns {string} -`banlist` words censored out with '*****'
+ */
+
 // pseudo code:
 // ============
 function censorMessage(message, banList){
